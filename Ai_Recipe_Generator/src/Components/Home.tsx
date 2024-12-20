@@ -22,6 +22,18 @@ export default function Home() {
           });
     }
 
+    if(ingredients.length > 0){
+      const object=ingredients.filter((ingredient)=>ingredient.toLowerCase()===inputText.toLowerCase())
+      if(object){
+        toast.error("Ingredient already does exists in the list!", {
+            icon: <CircleAlert size={18} color="red" />,
+            className: "rounded-xl bg-[#cecec4] text-zinc-800 border-none   ",
+        });
+        setInputText('');
+        return
+     }
+    }
+
     if (inputText !== "") {
 
       setIngredients((prevIngredients) => {
