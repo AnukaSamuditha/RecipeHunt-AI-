@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { Toaster, toast } from "sonner";
 import { CircleAlert } from "lucide-react";
 import { getRecipeFromMistral } from "../Ai";
