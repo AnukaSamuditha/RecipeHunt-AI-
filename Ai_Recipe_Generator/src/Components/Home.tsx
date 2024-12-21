@@ -69,7 +69,8 @@ export default function Home() {
       return
     }
 
-    setGenerating((prev)=>!prev);
+    if(ingredients.length >3){
+      setGenerating((prev)=>!prev);
 
     try{
         const response=await getRecipeFromMistral(ingredients);
@@ -84,6 +85,7 @@ export default function Home() {
     }
     
   }
+    }
 
   
   return (
