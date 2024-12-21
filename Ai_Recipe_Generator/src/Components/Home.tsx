@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         </form>
       </div>
-      <div className={`w-full lg:h-auto absolute  pointer-events-none top-20 opacity-40 `}>
+      <div className={`w-full lg:h-auto fixed  pointer-events-none top-20 opacity-40 `}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
