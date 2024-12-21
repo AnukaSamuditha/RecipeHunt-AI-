@@ -11,7 +11,6 @@ export default function Home() {
   const [isGenerating,setGenerating]=useState<boolean>(false);
 
 
-
   function handleIngredients(event: React.FormEvent<HTMLFormElement>): void {
     event.preventDefault();
 
@@ -56,7 +55,7 @@ export default function Home() {
     if (ingredients.length === 0) {
       toast.error("Add ingredients to get started!", {
         icon: <CircleAlert size={18} color="red" />,
-        className: "rounded-xl bg-[#cecec4] text-zinc-800 border-none   ",
+        className: "rounded-xl bg-[#cecec4] text-zinc-800 border-none",
       });
 
       return;
@@ -67,6 +66,7 @@ export default function Home() {
         icon: <CircleAlert size={18} color="red" />,
         className: "rounded-xl bg-[#cecec4] text-zinc-800 border-none   ",
       });
+      return
     }
 
     setGenerating((prev)=>!prev);
