@@ -94,7 +94,7 @@ export default function Home() {
 
       <div className="w-full h-auto flex justify-center items-center">
         <form className="lg:w-[50%] w-[90%]  mt-20" onSubmit={handleIngredients}>
-          <div className="w-full flex justify-center items-center gap-4">
+          <div className="w-full flex justify-center items-center gap-4 mt-12">
             <input
               type="text"
               name="inputText"
